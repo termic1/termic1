@@ -99,7 +99,7 @@ class Calendar:
 			for d, day in enumerate(week):
 				if day:
 					b = tk.Button(self.parent, width=1,bg=self.COLOR_OF_DAY_BUTTONS, text=day,
-								  command=lambda day=day: self.selection(day, calendar.day_name[(day) % 7]))
+								  command=lambda day=day: self.selection(day, calendar.day_name[1+(day) % 7]))
 					self.wid.append(b)
 					b.grid(row=w, column=d)
 		
